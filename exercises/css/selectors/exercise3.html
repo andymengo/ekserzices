@@ -14,18 +14,38 @@
             line-height: 50px; /* align text vertically (this works only for a single line of text) */
             text-align: center;
         }
+
+        .even {
+            background-color: #0033cc;
+        }
+
+        .odd {
+            background-color: #ff3333;
+        }
+
+        .liten {
+            font-size: 0.7em;
+        }
+
+        .stor {
+            font-size: 1.3em;
+        }
+
+        #lucky7 {
+            color: white;
+        }
     </style>
 </head>
 <body>
-<div>1</div>
-<div>2</div>
-<div>3</div>
-<div>4</div>
-<div>5</div>
-<div>6</div>
-<div>7</div>
-<div>8</div>
-<div>9</div>
-<div>10</div>
+<div class= "odd liten">1</div>
+<div class= "even liten">2</div>
+<div class= "odd liten">3</div>
+<div class= "even">4</div>
+<div class= "odd">5</div>
+<div class= "even">6</div>
+<div class= "odd" id="lucky7">7</div>
+<div class= "even stor">8</div>
+<div class= "odd stor">9</div>
+<div class= "even stor">10</div>
 </body>
 </html>
