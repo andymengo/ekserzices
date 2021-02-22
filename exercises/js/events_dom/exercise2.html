@@ -11,7 +11,39 @@
         }
     </style>
     <script>
-        /* TODO: write JS code here */
+        let colors = ["blue", "green", "red", "magenta", "yello", "orange", "black", "brown"]
+
+        function changeColor() {
+            let color = this.style.backgroundColor;
+            let idx = colors.indexOf(color)
+            idx++; //bytter til neste farge
+            if (idx == colors.length) { // starter på starten igjen etter slutten
+                idx = 0;
+            }
+            this.style.backgroundColor = newcolor;
+        }
+
+        function randcolor() {
+            let tall = Math.random();
+            let foink;
+            switch (tall) {
+                case tall < 0.334:
+                    return "blue";
+                case tall < 0.667:
+                    return "red";
+                case tall < 1:
+                    return "green"
+            }
+        }
+
+        function init() {
+            let mydiv = document.getElementById("mydiv");
+            let rnd = Math.floor((Math.random() * colors.length));
+            mydiv.style.backgroundColor = colors[rnd];
+            mydiv.onclick = changeColor;
+        }
+
+        window.onload = init;
     </script>
 </head>
 <body>

@@ -16,10 +16,15 @@
         }
     </style>
     <script>
-        // use onmouseover onmouseleave and innerHTML
+        function changetext(element, text) {
+            element.innerHTML = text;
+        }
     </script>
 </head>
 <body>
-<div id="mydiv" >Hello world</div>
+<div id="mydiv" 
+onmouseover="changetext(this, 'Can I help you, bitch?')"
+ onmouseout="changetext(this, 'hello niggas')">
+    Hello world</div>
 </body>
 </html>
