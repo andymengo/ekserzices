@@ -8,13 +8,13 @@
     <!-- development version, includes helpful console warnings -->
     <script src="https://unpkg.com/vue@3.0.5/dist/vue.global.js"></script>
 
-    <title>Vue Exercise 1</title>
+    <title>Solution: Vue Exercise 2</title>
     <style>
         .counter {
             border: 1px solid gray;
             padding: 10px;
         }
-        .kake {
+        .count {
             margin-right: 10px;
         }
         .counter_container {
@@ -24,21 +24,21 @@
         .counter_container>* {
             margin-bottom: 30px;
         }
-        .even {
-            background-color: lightgray;
-        }
-        .counter_label {
-            float: right;
-        }
     </style>
 </head>
 <body>
     <div id="app">
         <div class="counter_container">
-            <div class="counter" v-bind:class="{'even': isEven}">
-                <span id="count">{{ count }}</span>
-                <button v-on:click="increment">Add</button>
-                <span class="counter_label">{{ isEven ? "even": "odd" }}</span>
+            <div>
+                <button v-on:click="add">Add counter</button>
+                <button v-on:click="addToAll">Add to all</button>
+            </div>
+            <div class="counter" v-for="(count, index) in counts">
+                <span id="count" class="count">{{ count }}</span>
+                <button v-on:click="increment(index)">Add</button>
+            </div>
+            <div v-if="(counts.length == 0)">
+                <span>No counter added.</span>
             </div>
         </div>
     </div>
@@ -47,17 +47,20 @@
         Vue.createApp({
             data: function(){ 
                 return {
-                    count: 0
+                    counts: []
                 }
             },
             methods: {
-                increment: function(){
-                    this.count += 1;
-                }
-            },
-            computed: {
-                isEven: function(){
-                    return (this.count%2 == 0);
+                increment: function(index){
+                    this.counts[index]++;
+                },
+                add: function(){
+                    this.counts.push(0);
+                },
+                addToAll: function(){
+                    for (let i=0; i< this.counts.length; i++){
+                        this.increment(i);
+                    }
                 }
             }
         }).mount("#app");
