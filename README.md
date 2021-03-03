@@ -32,10 +32,10 @@ This is a tentative schedule and will be subject to changes.
 | 7 | 1 | Vue Part II. | [slides](slides/Vue-p2.pdf), [examples](examples/js/vue2), [exercises](exercises/js/vue2), [solutions](solutions/js/vue2), [video](https://stavanger.instructuremedia.com/embed/25447d78-9d3f-4b95-8949-5b748c042f73) |
 | 7 | 2 | Vue Part III. | [slides](slides/Vue-p3.pdf), [examples](examples/js/vue3), [exercises](exercises/js/vue3), [solutions](solutions/js/vue3), [video](https://stavanger.instructuremedia.com/embed/42ddc58c-7044-495f-bf43-7a661dce4b3f) |
 | | | Python basics | [slides-1](https://speakerdeck.com/ljehl/python-p1) [slides-2](https://speakerdeck.com/ljehl/dat310-python-p2), [examples](examples/python/basics), [exercises](exercises/python/basics), [solutions](solutions/python/basics) |
-| 8 | 1 | HTTP | slides](slides/HTTP.pdf), [examples](examples/python/http), [exercises](exercises/python/http), [solutions](solutions/python/http) |
-| 8 | 2 | Flask Part I. (requests) |  |
-| 9 | 1 | Flask Part II. (templates) |  |
-| 9 | 2 | Flask Part III. (database handling) |  |
+| 8 | 1 | HTTP | [slides](slides/HTTP.pdf), [examples](examples/python/http), [exercises](exercises/python/http), [solutions](solutions/python/http), [video](https://stavanger.instructuremedia.com/embed/5c77c0c9-1bce-4704-ad97-9da5d0ab4e75) |
+| 8 | 2 | Flask Part I. (requests) | [slides](slides/Flask-p1.pdf), [examples](examples/python/flask), [exercises](exercises/python/flask1), [solutions](solutions/python/flask1), [video](https://stavanger.instructuremedia.com/embed/c32dbb63-1440-4930-91dc-8e279136da99) |
+| 9 | 1 | Flask Part II. (templates) | [slides](slides/Flask-p2.pdf), [examples](examples/python/flask), [exercises](exercises/python/flask2), [solutions](solutions/python/flask2), [video](https://stavanger.instructuremedia.com/embed/a50ed9d7-b561-44ce-ad89-c99e36a4862c) |
+| 9 | 2 | Flask Part III. (database handling) | [slides](slides/Flask-p3.pdf), [examples](examples/python/flask), [exercises](exercises/python/flask3), [solutions](solutions/python/flask3), [video](https://stavanger.instructuremedia.com/embed/ed2ef4b9-157a-4059-893b-2937a2ca72b5) |
 | 10 | 0 | No lectures |  |
 | 11 | 1 | AJAX |  |
 | 11 | 2 | AJAX & Vue |  |
